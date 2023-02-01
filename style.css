@@ -49,7 +49,7 @@ header{
 .content-card{
   border-radius: 20px;
   background-color: rgb(18, 25, 30);
-  box-shadow: 3px 2px rgba(16, 251, 208, 0.788);
+  box-shadow: 3px 3px 3px rgba(16, 251, 208, 1);
 }
 footer{
   background: #000;
