@@ -41,3 +41,15 @@
 .hero p {
   font-size: clamp(1rem, 4vmin, 2rem);
 }
+
+.card-img-container {
+  overflow: hidden;
+  height: 15rem;
+  display: grid;
+  justify-content: center;
+}
+.card-img-container > img {
+  object-fit: contain;
+  height: 100%;
+  transform: scale(1.1);
+}

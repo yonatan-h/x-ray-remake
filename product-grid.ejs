@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><% pageTitle %> | Zana</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="bootstrap-5/js/bootstrap.js"></script>
+    <link rel="icon" href="images/logos/logo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="bg-primary shadow">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand text-light" href="index.html">
+            Pacific Northwest X-Ray Inc.
+          </a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mr-auto rounded">
+              <li class="nav-item">
+                <a class="nav-link link-light" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="products/phones.html"
+                  >EQUIPMENT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="products/phones.html"
+                  >ACCESSORIES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="products/phones.html"
+                  >SUPPLIES & PARTS</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-light" href="about-us.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="contact-us.html"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="m-5">
+      <div class="row justify-content-between">
+        <section class="col-lg-3 bg-dark rounded p-5 h-25">
+          <h2 class="text-light"><%- pageTitle %></h2>
+          <br />
+          <nav class="nav">
+            <ul class="list-unstyled">
+              <% for (const subLink of subLinks){ %> <% const {href, name } =
+              subLink; %>
+
+              <li>
+                <a class="link-light" href=" <%- href %> "> <%- name %> </a>
+              </li>
+              <% } %>
+            </ul>
+          </nav>
+        </section>
+
+        <div class="col-lg-8 container">
+          <ul class="row g-lg-5 list-unstyled">
+            <% for (const product of products) {%> <% const {title, cost,
+            photoSrc, description} = product%>
+
+            <li class="col-lg-4">
+              <div class="card shadow">
+                <div class="card-img-container">
+                  <img class="" src="<%- photoSrc%>" alt="<%- title %>" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"><%- title %></h3>
+                  <p><%- description %></p>
+                </div>
+                <div class="card-footer">
+                  <a class="btn btn-primary w-100" href="product.html">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+
+        <section class="col-lg-4 card p-3">
+          <h2 class="card-head">Found A Product Of Interest?</h2>
+          <a class="card-body" href="contact-us.html">
+            <button class="btn btn-primary">Contact Us</button>
+          </a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-dark py-5">
+      <div class="container text-light">
+        <div class="row gy-3">
+          <div class="col-lg-4">
+            <h2>Contact Information</h2>
+
+            <dl>
+              <dt>Fax</dt>
+              <dd>503-666-8855</dd>
+
+              <dt>Phone</dt>
+              <dd>+503-667-3000</dd>
+
+              <dt>P.O. Box</dt>
+              <dd>97030</dd>
+            </dl>
+          </div>
+
+          <div class="col-lg-4">
+            <h2>Search for a product</h2>
+            <form class="d-flex">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-light ms-2" type="submit">Search</button>
+            </form>
+          </div>
+
+          <div class="col-lg-4">
+            <p>©1997-2023 Pacific Northwest X-Ray Inc.</p>
+            <p>©All Rights Reserved</p>
+            <p>Sales & Marketing Division</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us | Zana</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logos/logo.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.css" />
+    <script defer src="bootstrap-5/js/bootstrap.js"></script>
+
+    <script defer src="js/contact-us.js"></script>
+  </head>
+  <body>
+    <header class="bg-primary shadow">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand text-light" href="index.html">
+            Pacific Northwest X-Ray Inc.
+          </a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mr-auto rounded">
+              <li class="nav-item">
+                <a class="nav-link link-light" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="equipment-dark-room"
+                  >EQUIPMENT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="accessories-lead-marker"
+                  >ACCESSORIES</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-light" href="supplies">SUPPLIES</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-light" href="parts">PARTS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-light" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <div class="row gx-5">
+        <form class="col-lg-6" id="contact-form">
+          <h2>Contact Form</h2>
+
+          <fieldset class="form-group">
+            <legend>What are you interested in?</legend>
+            <input
+              class="btn-check"
+              type="radio"
+              name="reason"
+              value="buy-phones"
+              id="buy-phones"
+            />
+            <label class="m-2 btn btn-outline-primary">Buy Equipments</label>
+            <input
+              class="btn-check"
+              type="radio"
+              name="reason"
+              value="buy-tablets"
+              id="buy-tablets"
+            />
+            <label class="m-2 btn btn-outline-primary">Buy Accessories</label>
+
+            <input
+              class="btn-check"
+              type="radio"
+              name="reason"
+              value="buy-watches"
+              id="buy-watches"
+            />
+            <label class="m-2 btn btn-outline-primary">Buy Supplies</label>
+
+            <input
+              class="btn-check"
+              type="radio"
+              name="reason"
+              value="repair-training"
+              id="repair-training"
+            />
+            <label class="m-2 btn btn-outline-primary">Buy Parts</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Information</legend>
+
+            <div class="form-floating mb-3">
+              <input
+                required
+                class="form-control"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
+              <label for="name">Your Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                required
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email Address"
+              />
+              <label for="email">Your Email Address</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                required
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                placeholder="Your Phone Number"
+              />
+              <label for="phone-number">Your Phone Number</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                required
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+              />
+              <label for="subject">Subject</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control h-100"
+                required
+                name="message"
+                id="message"
+                rows="15"
+                placeholder="Message"
+              ></textarea>
+              <label for="message">Message </label>
+            </div>
+
+            <div class="mb-3">
+              <p>
+                <input type="checkbox" required />
+                I have reviewed
+                <a href="/ordering-policy.html">The Ordering Policy</a>
+              </p>
+            </div>
+          </fieldset>
+
+          <input class="btn btn-primary" type="submit" value="Submit" />
+        </form>
+
+        <div class="col-lg-6 my-5">
+          <section>
+            <h2>Come Visit Us In Person!</h2>
+            <p>
+              Please note that our offices are on the west coast of the United
+              States, and are on Pacific Time. We are open Monday through Friday
+              8am to 5pm. Also, our time zone switches on and off of "Daylight
+              savings time". So in the summer we are GMT -7 hours, and in the
+              winter GMT -8 hours.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark py-5">
+      <div class="container text-light">
+        <div class="row gy-3">
+          <div class="col-lg-4">
+            <h2>Contact Information</h2>
+
+            <dl>
+              <dt>Fax</dt>
+              <dd>503-666-8855</dd>
+
+              <dt>Phone</dt>
+              <dd>+503-667-3000</dd>
+
+              <dt>P.O. Box</dt>
+              <dd>97030</dd>
+            </dl>
+          </div>
+
+          <div class="col-lg-4">
+            <h2>Search for a product</h2>
+            <form class="d-flex">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-light ms-2" type="submit">Search</button>
+            </form>
+          </div>
+
+          <div class="col-lg-4">
+            <p>©1997-2023 Pacific Northwest X-Ray Inc.</p>
+            <p>©All Rights Reserved</p>
+            <p>Sales & Marketing Division</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
