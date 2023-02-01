@@ -2,7 +2,15 @@
   font-size: 2rem;
   word-wrap: break-word;
 }
-
+header{
+  background-color: #000;
+}
+ul:hover{
+  color: yellowgreen !important;
+}
+.heading{
+  color:#cdf1b3;;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -15,7 +23,7 @@
   font-size: clamp(1rem, 20vmin, 7rem);
   padding: 5vh 0;
 
-  background-image: linear-gradient(to right, darkblue, red, darkblue);
+  background-image: linear-gradient(to right, rgb(0, 0, 85), rgb(145, 3, 3), rgb(0, 0, 85));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -40,4 +48,13 @@
 }
 .hero p {
   font-size: clamp(1rem, 4vmin, 2rem);
+}
+.content-card{
+  border-radius: 20px;
+  background-color: rgb(18, 25, 30);
+  box-shadow: 3px 2px rgb(252, 17, 252);
+}
+footer{
+  background: #000;
+  color: rgb(205, 241, 179);
 }
