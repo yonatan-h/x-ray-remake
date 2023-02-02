@@ -53,3 +53,18 @@
   height: 100%;
   transform: scale(1.1);
 }
+
+.content-card {
+  border-radius: 20px;
+  background-color: rgb(18, 25, 30);
+  box-shadow: 3px 3px 3px rgba(16, 251, 208, 1);
+}
+
+header {
+  background-color: #000;
+}
+
+footer {
+  background: #000;
+  color: rgb(205, 241, 179);
+}

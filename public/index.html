@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home | Pacific North West</title>
+    <title>Home | Zana</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/logos/logo.svg" type="image/x-icon" />
@@ -11,11 +11,11 @@
     <script defer src="bootstrap-5/js/bootstrap.js"></script>
   </head>
 
-  <body>
-    <header class="bg-primary shadow">
-      <div class="container">
+  <body class="bg-dark text-white">
+    <header class="shadow">
+      <div class="container py-3">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand text-light" href="index.html">
+          <a class="navbar-brand heading text-light" href="index.html">
             Pacific Northwest X-Ray Inc.
           </a>
           <button
@@ -36,29 +36,27 @@
           >
             <ul class="navbar-nav mr-auto rounded">
               <li class="nav-item">
-                <a class="nav-link link-light" href="index.html">HOME</a>
+                <a class="nav-link link-warning" href="/index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light" href="equipment-dark-room"
+                <a class="nav-link link-light" href="/equipment-dark-room"
                   >EQUIPMENT</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light" href="accessories-lead-marker"
+                <a class="nav-link link-light" href="/accessories-lead-marker"
                   >ACCESSORIES</a
                 >
               </li>
-
               <li class="nav-item">
-                <a class="nav-link link-light" href="supplies">SUPPLIES</a>
+                <a class="nav-link link-light" href="/supplies">SUPPLIES</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link link-light" href="parts">PARTS</a>
+                <a class="nav-link link-light" href="/parts">PARTS</a>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link link-light" href="contact.html">CONTACT</a>
+                <a class="nav-link link-light" href="/contact.html">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -76,24 +74,26 @@
             suppliers and stay connected all year round.
           </p>
 
-          <form class="d-flex w-lg-50">
+          <form class="d-flex w-100">
             <input
-              class="form-control border border-secondary"
+              class="form-control border border-secondary rounded-5"
               type="search"
-              placeholder="Search"
+              placeholder="Search for X-ray products"
               aria-label="Search"
             />
-            <button class="btn btn-primary ms-2" type="submit">Search</button>
+            <button class="btn btn-primary ms-2 rounded-5" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </section>
 
       <section class="row mb-5">
-        <div class="col-lg-8 shadow p-3">
+        <div class="col-lg-8 p-3 content-card">
           <h2>Who We Are</h2>
           <p>
             We believe in coming together to make real progress in the
-            ever-changing world of human health. Whether it’s connecting
+            ever-changing world of human health. Whether it's connecting
             manufacturers from across the globe with the right distributors, or
             empowering practitioners to deliver better patient outcomes, we’re
             committed to driving deeper learning, relationships and
@@ -105,10 +105,10 @@
       </section>
 
       <section class="row d-flex justify-content-end mb-5">
-        <div class="col-lg-8 shadow p-3">
+        <div class="col-lg-8 p-3 content-card">
           <h2>Products That We Produce</h2>
 
-          <ul class="row list-unstyled">
+          <ul class="row list-unstyled text-dark">
             <li class="col-sm-6 col-lg-3">
               <div class="card">
                 <a class="card-header" href="products/tablets.html"
@@ -137,12 +137,21 @@
 
             <li class="col-sm-6 col-lg-3">
               <div class="card">
-                <a class="card-header" href="products/watches.html"
-                  >Supplies&Parts</a
-                >
+                <a class="card-header" href="products/watches.html">Supplies</a>
                 <img
                   class="card-body img-fluid"
                   src="images/basic-products/CleanScreen_1.jpg"
+                  alt="a samsung watch"
+                />
+              </div>
+            </li>
+
+            <li class="col-sm-6 col-lg-3">
+              <div class="card">
+                <a class="card-header" href="products/watches.html">Parts</a>
+                <img
+                  class="card-body img-fluid"
+                  src="images/basic-products/x-ray-grids.jpg"
                   alt="a samsung watch"
                 />
               </div>
@@ -152,7 +161,7 @@
       </section>
 
       <section class="row mb-5">
-        <div class="col-lg-8 shadow p-3 rounded">
+        <div class="col-lg-8 p-3 content-card">
           <div>
             <h2>Premium Exhibitors</h2>
             <p>We Have Worked With</p>
@@ -210,7 +219,7 @@
       </section>
 
       <section class="row mb-5 justify-content-center">
-        <div class="col-lg-6 shadow p-3 rounded bg-light">
+        <div class="col-lg-6 shadow p-3 rounded bg-dark">
           <h2>Let's Discuss</h2>
           <p>
             If you are interested in knowing more about us, or if you want to
@@ -221,8 +230,8 @@
       </section>
     </main>
 
-    <footer class="bg-dark py-5">
-      <div class="container text-light">
+    <footer class="py-5">
+      <div class="container">
         <div class="row gy-3">
           <div class="col-lg-4">
             <h2>Contact Information</h2>
@@ -248,7 +257,7 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-light ms-2" type="submit">Search</button>
+              <button class="btn btn-primary ms-2" type="submit">Search</button>
             </form>
           </div>
 
