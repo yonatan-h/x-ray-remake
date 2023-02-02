@@ -1,5 +1,5 @@
 const examRoom = {
-  pageTitle: "X-Ray Lead Markers Accessories",
+  pageTitle: "Exam Room Accessories",
 
   subLinks: [
     {
@@ -45,6 +45,7 @@ const examRoom = {
 
 const leadMarker = {
   pageTitle: "X-Ray Lead Markers Accessories",
+
   subLinks: [
     {
       href: "accessories-lead-marker",
